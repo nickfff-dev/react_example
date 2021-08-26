@@ -17,8 +17,8 @@ class LuckyThree extends React.Component {
         e.persist();
     }
     
-    cardClickHandler (event) {
-        this.displayRandomNumbers.bind(this, event.target)
+    cardClickHandler (e) {
+        this.displayRandomNumbers.bind(this, e)
     }
 
     // TODO 4: Define a function called "tryLuckClickHandler" and call the given function "checkAllCards" inside it
