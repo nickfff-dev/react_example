@@ -18,12 +18,7 @@ class LuckyThree extends React.Component {
     }
     
     cardClickHandler (e) {
-        let maxNumber = 9;
-        let currentTarget = e.currentTarget;
-        interval_id = setInterval(() => {
-            currentTarget.childNodes[0].innerText = Math.floor(Math.random() * (maxNumber + 1));
-        }, 200);
-        e.persist();
+        return this.displayRandomNumbers.bind(e)
     }
 
     // TODO 4: Define a function called "tryLuckClickHandler" and call the given function "checkAllCards" inside it
