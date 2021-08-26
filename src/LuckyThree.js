@@ -50,9 +50,9 @@ class LuckyThree extends React.Component {
                           b) Repeat the above step (a) with all the three NumberCards
                         */
                     }
-                    <NumberCard id={this.props.idArr[0]} color={this.props.colorsArr[0]} cardClickHandler={this.cardClickHandler} />
-                    <NumberCard id={this.props.idArr[1]} color={this.props.colorsArr[1]} cardClickHandler={this.cardClickHandler}/>
-                    <NumberCard id={this.props.idArr[2]} color={this.props.colorsArr[2]} cardClickHandler={this.cardClickHandler}/>
+                    <NumberCard id={this.props.idArr[0]} color={this.props.colorsArr[0]} cardClickHandler={this.cardClickHandler.bind(this.props.idArr[0])} />
+                    <NumberCard id={this.props.idArr[1]} color={this.props.colorsArr[1]} cardClickHandler={this.cardClickHandler.bind(this.props.idArr[1])}/>
+                    <NumberCard id={this.props.idArr[2]} color={this.props.colorsArr[2]} cardClickHandler={this.cardClickHandler.bind(this.props.idArr[2])}/>
                 </div>
                 {
                     /* TODO 5: Add the onClick handler to the input tag and bind it with the created function in TODO 4 called "tryLuckClickHandler" */
