@@ -42,7 +42,7 @@ class LuckyThree extends React.Component {
     }
     
   tryLuckClickHandler (e) {
-        this.checkAllCards.bind(e)
+       return this.checkAllCards.bind(e)
     }
     
     render() {
@@ -62,7 +62,7 @@ class LuckyThree extends React.Component {
                 {
                     /* TODO 5: Add the onClick handler to the input tag and bind it with the created function in TODO 4 called "tryLuckClickHandler" */
                 }
-                <input id="tryYourLuckBtn" className="custom-btn" type="button" value="Try Your Luck" onClick={this.tryLuckClickHandler.bind(this)} />
+                <input id="tryYourLuckBtn" className="custom-btn" type="button" value="Try Your Luck" onClick={this.tryLuckClickHandler.bind(this.id)} />
             </div>
         )
     }
