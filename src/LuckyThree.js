@@ -42,7 +42,7 @@ class LuckyThree extends React.Component {
     }
     
   tryLuckClickHandler (e) {
-        this.checkAllCards.bind(this, e)
+        this.checkAllCards.bind(e)
     }
     
     render() {
