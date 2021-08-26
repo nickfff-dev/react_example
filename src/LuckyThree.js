@@ -18,7 +18,7 @@ class LuckyThree extends React.Component {
     }
     
     cardClickHandler (event) {
-        this.displayRandomNumbers.bind(this, event.target.value)
+        this.displayRandomNumbers.bind(this, event.target)
     }
 
     // TODO 4: Define a function called "tryLuckClickHandler" and call the given function "checkAllCards" inside it
